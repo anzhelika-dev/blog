@@ -5,6 +5,7 @@
     "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "ESNext",
+    "lib": ["es5", "dom"],
     "target": "es5",
     "jsx": "react-jsx",
     "allowJs": true,

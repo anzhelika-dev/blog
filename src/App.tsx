@@ -6,11 +6,12 @@ import { AboutAsync }  from "./pages/About/About.async";
 import { Link } from "react-router-dom";
 
 import { useTheme } from "./theme/useTheme";
+import { classNames } from "./helpers/classNames";
 
 function App() {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className={`app ${theme}`}>
+    <div className={classNames('app', {}, [theme])}>
       <button onClick={toggleTheme}>TOGGLE THEME</button>
       <Link to={"/"}>Главная</Link>
       <Link to={"/about"}>About</Link>
