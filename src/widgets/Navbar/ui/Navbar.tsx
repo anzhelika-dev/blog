@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { AppLink, AppLinkTheme } from "shared/ui/AppLink";
 import { classNames } from "shared/lib/classNames/classNames";
 import cls from './Navbar.module.scss';
 
@@ -13,8 +13,10 @@ export const Navbar: React.FC<NavbarProps> = (props) => {
       cls: cls.navbar,
       additional: [className]
     })}>
-        <Link to={"/"}>Главная</Link>
-        <Link to={"/about"}>About</Link>
+      <div className={cls.links}>
+        <AppLink to={"/"}>Главная</AppLink>
+        <AppLink to={"/about"}>About</AppLink>
+      </div>
     </div>
   )
 }
