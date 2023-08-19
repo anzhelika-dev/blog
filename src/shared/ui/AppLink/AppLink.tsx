@@ -21,7 +21,6 @@ export const AppLink = (props: AppLinkProps) => {
         theme = AppLinkTheme.PRIMARY,
         ...otherProps
     } = props;
-console.log(cls, 'cls');
     return (
         <Link
             to={to}
